@@ -19,6 +19,6 @@ This is what is inside the config.json file.
   "bot_game":""
 }
 ```
-First to the [discord developers website](https://discordapp.com/developers/applications/me) and get the bot token from the bot you have already created and copy and paste it into the file.
+First go to the [discord developers website](https://discordapp.com/developers/applications/me) and get the bot token from the bot you have already created and copy and paste it into the file.
 
 Secondly chose a prefix for your discord bot. Make sure to make it unique so it doesn't mix up with other bots. I'd not use `?` or `!` as your prefix since these are common prefixes.
