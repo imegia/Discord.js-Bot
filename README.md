@@ -64,3 +64,7 @@ These are some examples of some useful links to help you.
 #### Imegia's Profiles
 
 * **[Twitter](https://twitter.com/imegia_)** profile
+* **[Twitch](https://www.twitch.tv/imegia)** profile
+* **[Reddit](Reddit - https://www.reddit.com/user/imegia) profile
+* **[Instagram](https://www.instagram.com/imegia_)** profile
+* **[Github](https://github.com/imegia)** profile
