@@ -25,4 +25,4 @@ Secondly chose a prefix for your discord bot. Make sure to make it unique so it 
 
 Thirdly you need to get your discord user id. You can do this by going on discord and right clicking on your profile picture on a server and click the `Copy ID` button on the panel. However you can only do this if the `Developer Mode` is enabled in your settings. You can enable this by going into your user settings and then going into the `Appearance` category and under the `Advanced` heading there is a `Developer Mode` sliding button. Click it to enable `Developer Mode`.
 
-Finally you need to chose what the status of your bot will be. You can make it look likes it's playing a real game or you could do something else. Most people have the name for the help command. An example of that would be `=help for commands.`
+Finally you need to chose what the status of your bot will be. You can make it look likes it's playing a real game or you could do something else. Most people have the name for the help command. An example of that would be `=help for commands`. This would be a good option because it shows other users your prefix and help command.
