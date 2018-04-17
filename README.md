@@ -8,7 +8,7 @@ For this bot to work you must follow these simple steps.
 # Starting The Bot
 To start the bot execute the `start.bat` file and the bot will start. However if you are not on a windows device you can run the javascript file from the command line
 
-`
+```
 {
 
   //Paste your token here
@@ -28,4 +28,4 @@ To start the bot execute the `start.bat` file and the bot will start. However if
   "bot_game":"Watch_Dogs 2"
   
 }
-`
+```
