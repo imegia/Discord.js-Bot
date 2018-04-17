@@ -19,5 +19,4 @@ This is what is inside the config.json file.
   "bot_game":""
 }
 ```
-
-Going to the [discord developers website](https://discordapp.com/developers/applications/me) you can
+First to the [discord developers website](https://discordapp.com/developers/applications/me) and get the bot token from the bot you have already created.
