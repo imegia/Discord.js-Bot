@@ -1,4 +1,4 @@
-# Getting Started
+###### Getting Started
 For this bot to work you must follow these simple steps.
 
 1. You have node.js installed on your device. If you don't have it installed you can download it **[here](https://nodejs.org)**.
