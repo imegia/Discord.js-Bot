@@ -56,7 +56,7 @@ These are some examples of some useful links to help you.
 #### Discord Servers
 
 * The Imegia's Programming **[Server](https://discord.gg/vTrYsHg)**
-* The An Idiot's Guide Official **[Server](https://discord.gg/gkZCQtH)**.
-* The Coding Den **[Server](http://discord.gg/0xZXblUU30hYo1vJ)**.
-* The Discord Guide **[Server](https://discord.gg/VpRbCGm)**.
-* The Discord Developers **[Server](http://discord.gg/discord-developers)**.
+* The An Idiot's Guide Official **[Server](https://discord.gg/gkZCQtH)**
+* The Coding Den **[Server](http://discord.gg/0xZXblUU30hYo1vJ)**
+* The Discord Guide **[Server](https://discord.gg/VpRbCGm)**
+* The Discord Developers **[Server](http://discord.gg/discord-developers)**
