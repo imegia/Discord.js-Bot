@@ -19,6 +19,7 @@ This is what is inside the config.json file.
   "bot_game":""
 }
 ```
+###The Token
 First go to the [discord developers website](https://discordapp.com/developers/applications/me) and get the bot token from the bot you have already created and copy and paste it into the file.
 
 Secondly chose a prefix for your discord bot. Make sure to make it unique so it doesn't mix up with other bots. I wouldn't use `?`, `!` and `$` as your prefix since these are common prefixes. Also avoid having `@` or `#` as your prefix as is used to mention channels and users. It would be best to not have a single character prefix overall. A good example of a multiple character prefix would be mentioning the bots name as that is easy to know and unique.
