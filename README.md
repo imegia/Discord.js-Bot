@@ -55,8 +55,7 @@ These are some examples of some useful links to help you.
 
 #### Discord Servers
 
-The An Idiot's Guide Official **[Server](https://discord.gg/gkZCQtH)**.
-
-The Coding Den **[Server](http://discord.gg/0xZXblUU30hYo1vJ)**.
+* The An Idiot's Guide Official **[Server](https://discord.gg/gkZCQtH)**.
+* The Coding Den **[Server](http://discord.gg/0xZXblUU30hYo1vJ)**.
 
 
