@@ -1,5 +1,6 @@
 # Getting Started
-For this bot to work you must follow these simple steps.
+
+These are what you must do first before you start using your brand new bot.
 
 #### Requirements
 
