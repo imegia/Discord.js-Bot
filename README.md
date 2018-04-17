@@ -44,4 +44,4 @@ Finally you need to chose what the status of your bot will be. You can make it l
 
 # Hosting On A Raspberry Pi
 
-If you have a big server that is active you should consider hosting your bot 24-7 so your server members can use it when they want and not just when your online. There is a tutorial on YouTube by An Idiot's Guide who has made a video on how to set that up. You can find that **[here](https://www.youtube.com/watch?v=kpci6V8969g)**.
+If you have a big server that is active you should consider hosting your bot 24-7 so your server members can use it when they want and not just when your online. There is a tutorial on YouTube by An Idiot's Guide who has made a video on how to set that up. You can find that YouTube tutorial **[here](https://www.youtube.com/watch?v=kpci6V8969g)**.
