@@ -60,3 +60,7 @@ These are some examples of some useful links to help you.
 * The Coding Den **[Server](http://discord.gg/0xZXblUU30hYo1vJ)**
 * The Discord Guide **[Server](https://discord.gg/VpRbCGm)**
 * The Discord Developers **[Server](http://discord.gg/discord-developers)**
+
+#### Imegia's Profiles
+
+* **[Twitter](https://twitter.com/imegia_)** profile
