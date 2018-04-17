@@ -20,7 +20,7 @@ This is what is inside the config.json file.
 }
 ```
 
-###The Token
+### The Token
 
 First go to the [discord developers website](https://discordapp.com/developers/applications/me) and get the bot token from the bot you have already created and copy and paste it into the file.
 
