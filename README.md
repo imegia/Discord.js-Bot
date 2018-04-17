@@ -32,7 +32,7 @@ First go to the [discord developers website](https://discordapp.com/developers/a
 
 #### The Prefix
 
-Secondly chose a prefix for your discord bot. Make sure to make it unique so it doesn't mix up with other bots. I wouldn't use `?`, `!` and `$` as your prefix since these are common prefixes. Also avoid having `@` or `#` as your prefix as is used to mention channels and users. It would be best to not have a single character prefix overall. A good example of a multiple character prefix would be mentioning the bots name as that is easy to know and unique.
+Secondly chose a prefix for your discord bot. Make sure to make it unique so it doesn't mix up with other bots. I wouldn't use `?`, `!` and `$` as your prefix since these are common prefixes. Also avoid having `@` or `#` as your prefix as is used to mention channels and users. It would be best to not have a single character prefix overall. A good example of a multiple character prefix would be mentioning the bot's name as that is easy to know and unique.
 
 #### The Owner's ID
 
