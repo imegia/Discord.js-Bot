@@ -37,3 +37,5 @@ Thirdly you need to get your discord user id. You can do this by going on discor
 Finally you need to chose what the status of your bot will be. You can make it look likes it's playing a real game or you could do something else. Most people have the name for the help command. An example of that would be `=help for commands`. This would be a good option because it shows other users your prefix and help command.
 
 # Hosting On A Raspberry Pi
+
+If you have a big server that is active you should consider hosting your bot 24-7 so your server members can use it when they want and not just when your online. 
