@@ -12,9 +12,9 @@ To start the bot execute the `start.bat` file and the bot will start. However if
 
 ```json
 {
-  "token":"<bot_token>",
-  "prefix":"=",
-  "bot_owner":"<your_id>",
-  "bot_game":"Watch_Dogs 2"
+  "token":"",
+  "prefix":"",
+  "bot_owner":"",
+  "bot_game":""
 }
 ```
