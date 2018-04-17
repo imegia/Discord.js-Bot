@@ -10,13 +10,22 @@ To start the bot execute the `start.bat` file and the bot will start. However if
 
 `
 {
+
   //Paste your token here
+  
   "token":"<bot_token>",
+  
   //And you can even change the prefix
+  
   "prefix":"=",
+  
   //Change this to your own id
+  
   "bot_owner":"<your_id>"
-  //Change this to what your bot will be playing (not really)
+  
+  //Change this to what your bot will be playing (not really
+  
   "bot_game":"Watch_Dogs 2"
+  
 }
 `
