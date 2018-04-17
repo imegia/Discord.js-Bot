@@ -9,12 +9,15 @@ These are what you must do first before you start using your brand new bot.
 3. You have changed the values in the `config.json` file.
 
 #### Starting The Bot
+
 To start the bot execute the `start.bat` file and the bot will start. However if you are not on a windows device you can run the javascript file from the command line
 
 #### Inviting The Bot To A Server
+
 If you want to invite your discord bot use the link **[here](https://discordapp.com/oauth2/authorize?&client_id=YOUR_BOT_ID_HERE&scope=bot&permissions=0)** and replace `YOUR_BOT_ID_HERE` in the URL with your bot's ID. If you want your bot to be invited with permissions you can use the permission calculator **[here](https://discordapi.com/permissions.html)** to sort that out. Once you've got the code from the permissions calculator website replace the zero on the end of the URL with the code.
 
 # The Config File
+
 This is what is inside the config.json file.
 
 ```json
@@ -45,3 +48,14 @@ Finally you need to chose what the status of your bot will be. You can make it l
 # Hosting On A Raspberry Pi
 
 If you have a big server that is active you should consider hosting your bot 24-7 so your server members can use it when they want and not just when your online. There is a tutorial on YouTube by An Idiot's Guide who has made a video on how to set that up. You can find that YouTube tutorial **[here](https://www.youtube.com/watch?v=kpci6V8969g)**.
+
+# Useful Links
+
+These are some examples of some useful links to help you.
+
+#### Discord Servers
+
+The An Idiot's Guide Official **[Server](https://discord.gg/gkZCQtH)**.
+The Coding Den **[Server](http://discord.gg/0xZXblUU30hYo1vJ)**.
+
+
