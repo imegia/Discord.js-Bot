@@ -65,7 +65,6 @@ client.on("message", (message) => { //This happens when a message is sent in the
     let full_arg = args.slice(command).join(" ").slice(command).trim(); //This makes all the args into one variable
     let first_arg_lower = args[1]; //This makes it easier to get the first arg
 
-
     /* --- Commands --- */
     
     //Now lets start making some commands!
