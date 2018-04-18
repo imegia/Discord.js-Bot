@@ -87,10 +87,9 @@ client.on("message", (message) => { //This happens when a message is sent in the
         .addField(`${prefix}purge`, "This command deletes a hundred messages")
         .addField(`${prefix}8ball`, "This command predicts the future")
         .addField(`${prefix}copy`, "This command messages what the user has said")
-        .addField(`${prefix}whois`, "This command gives you more information about the chosen user")
+        .addField(`${prefix}whois`, "This command gives you more information about the mentioned user")
         .addField(`${prefix}rolldice`, "This command rolls a 6 sided dice for you and messages you the answer")
         .addField(`${prefix}flipcoin`, "This command flips a coin and messages you the answer")
-        .addField(`${prefix}purge`, "This command deletes 100 messages");
         message.channel.send(helpEmbed);
     }
     
@@ -155,7 +154,6 @@ client.on("message", (message) => { //This happens when a message is sent in the
     /* --- No Valid Command --- */
     else {
       let sliced_command = command.replace(prefix, "");
-      console.log(sliced_command);
       message.channel.send(`<@${message.author.id}> \`\'${sliced_command}\'\` wasn't recognised as a command!`);
     }
 });
