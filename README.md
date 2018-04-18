@@ -47,7 +47,7 @@ Finally you need to chose what the status of your bot will be. You can make it l
 
 # Commands
 
-In the most updated version of this the bot comes with the following commands
+These are all the commands that come with the bot
 
 #### Kick Command
 
