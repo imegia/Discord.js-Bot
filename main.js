@@ -53,7 +53,6 @@ client.on("message", (message) => { //This happens when a message is sent in the
     if (message.author.bot) return;  //This checks if the message author is a bot
     if (!message.guild) return; //This checks if the message is in a server
     if (!message.content) return; //This checks if the message is text
-    if (!message.startsWith(prefix)) return; //This checks if the message starts with the prefix
     
     /* --- Command arguments --- */
     
