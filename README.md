@@ -49,15 +49,15 @@ Finally you need to chose what the status of your bot will be. You can make it l
 
 In the most updated version of this the bot comes with the following commands
 
-* kick
-* ban
-* purge
-* 8ball
-* copy
-* whois
-* rolldice
-* flipcoin
-* purge
+#### kick
+#### ban
+#### purge
+#### 8ball
+#### copy
+#### whois
+#### rolldice
+#### flipcoin
+#### purge
 
 # Hosting On A Raspberry Pi
 
