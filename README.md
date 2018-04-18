@@ -50,6 +50,7 @@ Finally you need to chose what the status of your bot will be. You can make it l
 In the most updated version of this the bot comes with the following commands
 
 #### Kick Command
+dsdfsdf
 #### Ban Command
 #### Purge Command
 #### 8ball Command
