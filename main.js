@@ -7,6 +7,10 @@ const prefix = config.prefix; //Get the prefix string from the file and set it a
 const bot_owner = config.bot_owner_id; //Get the owner id string from the file and set it as a variable
 const bot_game = config.bot_game; //Get the bot game string for the status variable
 
+const flipcoin = [
+  'Heads', 'Tails'
+]
+
 const choices = [ //Make this variable for the 8ball command
   //Good answers
   'It is certain',
@@ -35,9 +39,8 @@ const choices = [ //Make this variable for the 8ball command
 ];
 
 client.on('ready', () => { //This happens when the bot is online
-  console.log(`To invite me to a server use the link https://discordapp.com/oauth2/authorize?&client_id=${client.id}&scope=bot&permissions=0`);
-  console.log(`Logged in as ${client.user.tag} (${client.user.id})`);
-  console.log(`Prefix is set to ${prefix}`);
+  console.log(`Logged in as ${client.user.tag}`);
+  console.log(`Prefix is set to '${prefix}'`);
   client.user.setActivity(bot_game); //This sets what the bot will be playing (not actually)
   client.user.setStatus('dnd'); //You can either choose: 'online', 'idle', 'dnd' or 'invisible'
   console.log("Ready!");
@@ -57,10 +60,12 @@ client.on("message", (message) => { //This happens when a message is sent in the
     /* --- Command arguments --- */
     
     //Now we need to get the command and the arguments from the message
-    const args = message.content.slice(prefix).trim().split(/ +/g); //This splits the message into a array
-    const command = prefix + args.shift().toLowerCase(); //This gets the command out of the list
-    const full_arg = args.join(" ").slice(command).trim(); //This makes all the args into one variable
-    
+    let args = message.content.trim().split(/ +/g); //This splits the message into a array
+    let command = args.shift().toLowerCase(); //This gets the command out of the list
+    let full_arg = args.slice(command).join(" ").slice(command).trim(); //This makes all the args into one variable
+    let first_arg_lower = args[1]; //This makes it easier to get the first arg
+
+
     /* --- Commands --- */
     
     //Now lets start making some commands!
@@ -73,7 +78,7 @@ client.on("message", (message) => { //This happens when a message is sent in the
     }
     
     /* --- Help Command --- */
-    if (Command === prefix + "help") {
+    else if (command === prefix + "help") {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle("Commands")
         .setColor("#e02f4c")
@@ -84,12 +89,14 @@ client.on("message", (message) => { //This happens when a message is sent in the
         .addField(`${prefix}8ball`, "This command predicts the future")
         .addField(`${prefix}copy`, "This command messages what the user has said")
         .addField(`${prefix}whois`, "This command gives you more information about the chosen user")
-        .setTimestamp();
+        .addField(`${prefix}rolldice`, "This command rolls a 6 sided dice for you and messages you the answer")
+        .addField(`${prefix}flipcoin`, "This command flips a coin and messages you the answer")
+        .addField(`${prefix}purge`, "This command deletes 100 messages");
         message.channel.send(helpEmbed);
     }
     
     /* --- Kick Command --- */
-    if (Command === prefix + "kick") {
+    else if (command === prefix + "kick") {
       if (!message.guild.member(client.user).hasPermission("KICK_MEMBERS")) return message.reply("I don\'t have the permission \`KICK_MEMBERS\` to complete that command!").catch(console.error); //Check if we have the perm to kick
       let kick_member = message.guild.member(message.mentions.users.first()); //Get the user we are going to kick
       if (!kick_member) return message.reply("I can\'t find that user!"); //If the user magically disappears
@@ -99,7 +106,7 @@ client.on("message", (message) => { //This happens when a message is sent in the
     }
     
     /* --- Ban Command --- */
-    if (Command === prefix + "ban") {
+    else if (command === prefix + "ban") {
       if (!message.guild.member(client.user).hasPermission("KICK_MEMBERS")) return message.reply("I don\'t have the permission \`BAN_MEMBERS\` to complete that command!").catch(console.error); //Check if we have the perm to ban
       let ban_member = message.guild.member(message.mentions.users.first()); //Get the user we are going to ban
       if (!ban_member) return message.reply("I can\'t find that user!"); //If the user magically disappears
@@ -109,31 +116,48 @@ client.on("message", (message) => { //This happens when a message is sent in the
     }
     
     /* --- 8ball Command ---*/
-    if (Command === prefix + "8ball") {
+    else if (command === prefix + "8ball") {
       message.channel.send(`${choices[Math.floor(Math.random() * choices.length)]} <@${message.author.id}>.`)
     }
     
     /* --- Copy Command --- */
-    if (command === prefix + "copy") {
+    else if (command === prefix + "copy") {
       message.channel.send(full_arg).catch(console.error);
     }
     
     /* --- Foo Command --- */
-    if (command === prefix + "foo") {
+    else if (command === prefix + "foo") {
       message.channel.send(`<@${message.author.id}> Bar!`).catch(console.error);
     }
     
     /* --- Purge Command --- */
-    if (command === prefix + "purge") {
+    else if (command === prefix + "purge") {
       if (message.author.id != bot_owner) return; //Filter so only you can use it
       message.channel.bulkDelete(100); //Delete 100 messages in that servers channel
     }
     
     /* --- Whois Command --- */
-    if (command === prefix + "whois") {
+    else if (command === prefix + "whois") {
       let whois_member = message.guild.member(message.mentions.users.first()); //Get the user we are going to get info on
       if (!whois_member) return message.reply("I can\'t find that user!");
-      message.channel.send(`<@${whois_member.id}> (\`${whois_member.tag}\`) (\`${whois_member.id}\`) joined discord on ${message.author.createdAt}`);
+      message.channel.send(`<@${whois_member.id}> (\`${whois_member.id}\`) joined discord on ${message.author.createdAt}`);
+    }
+
+    /* --- FLipcoin Command --- */
+    else if (command === prefix + "flipcoin") {
+      message.channel.send(`<@${message.author.id}> ${flipcoin[Math.floor(Math.random() * flipcoin.length)]}!`)
+    }
+
+    /* --- Rolldice Command --- */
+    else if (command === prefix + "rolldice") {
+      message.channel.send(`I rolled a ${Math.round(Math.random() * (6 - 1)) + 1}!`);
+    }
+    
+    /* --- No Valid Command --- */
+    else {
+      let sliced_command = command.replace(prefix, "");
+      console.log(sliced_command);
+      message.channel.send(`<@${message.author.id}> \`\'${sliced_command}\'\` wasn't recognised as a command!`);
     }
 });
 
