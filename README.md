@@ -50,15 +50,36 @@ Finally you need to chose what the status of your bot will be. You can make it l
 In the most updated version of this the bot comes with the following commands
 
 #### Kick Command
-dsdfsdf
+
+This command kicks the mentioned user
+
 #### Ban Command
+
+This command bans the mentioned user
+
 #### Purge Command
+
+This command deletes a hundred messages
+
 #### 8ball Command
+
+This command predicts the future
+
 #### Copy Command
+
+This command messages what the user has said
+
 #### Whois Command
+
+This command gives you more information about the mentioned user
+
 #### Rolldice Command
+
+This command rolls a 6 sided dice for you and messages you the answer
+
 #### Flipcoin Command
-#### Purge Command
+
+This command flips a coin and messages you the answer
 
 # Hosting On A Raspberry Pi
 
